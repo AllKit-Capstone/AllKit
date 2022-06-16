@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/common :: head('ALLKIT 사이트')">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>ALLKIT 사이트에 오신것을 환영합니다.</title>
+
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0" th:replace="fragments/common :: menu('home')">
+        <!--fragments/common.html에 놓았음 공용부분-->
+        <!-- <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>ALLKIT</h1>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">전체카테고리</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">한식</a>
+                                <a href="team.html" class="dropdown-item">일식</a>
+                                <a href="testimonial.html" class="dropdown-item">중식</a>
+                                <a href="booking.html" class="dropdown-item">양식</a>
+                                <a href="team.html" class="dropdown-item">채소/샐러드</a>
+                                <a href="testimonial.html" class="dropdown-item">후식</a>
+                            </div>
+                        </div>
+
+                        <a href="index.html" class="nav-item nav-link active">홈</a>
+                        <a href="about.html" class="nav-item nav-link">신상품</a>
+                        <a href="service.html" class="nav-item nav-link">베스트</a>
+                        <a href="menu.html" class="nav-item nav-link">특가/혜택</a>
+                        <a href="menu.html" class="nav-item nav-link">로그인</a>
+                        <a href="menu.html" class="nav-item nav-link">고객센터</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">우리의<br>맛있는 식사</h1>
+                            <br>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">제품 보러가기</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    
+	
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>ALLKIT</h5>
+                                <p>제품 판매 뿐만 아니라 사이트를 접속한 회원들에게 놀이터 같은 느낌을 주기 위해 제작하였습니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>이색레시피</h5>
+                                <p>회원들이 자신만의 독특한 레시피를 선보입니다.<br></br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>온라인 주문</h5>
+                                <p>영업시간:(평일)오전8시~오후10시/(주말)오전9시~오후8시/인터넷 주문은 24시간 가능합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5>고객센터</h5>
+                                <p>영업시간에만 전화가 가능하며, 그 외에는 고객센터 게시판을 이용해주시길 바랍니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+
+    <div class="container-xxl pt-5 pb-3">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-4">이달의 <i class="fa fa-utensils text-primary me-2"></i>추천메뉴</h1>
+            </div>
+
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item rounded pt-3">
+                                <div class="p-4 text-center">
+                                    <a href = "https://www.mychef.kr/goods/goods_view.php?goodsNo=1000002226&mtn=36%5E%7C%5E5%EC%9B%94+%EC%B6%94%EC%B2%9C+%EB%A9%94%EB%89%B4%5E%7C%5En">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/best1.PNG" alt="" style="width: 280px;"><br><br>
+                                    <h6>부모님과 함께 하기 좋은 밀키트 SET(밀푀유+버섯잡채+양장피)</h6>
+                                </a>
+                                <h6>38,800원</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item rounded pt-3">
+                                <div class="p-4 text-center">
+                                    <a href = "https://www.mychef.kr/goods/goods_view.php?goodsNo=1000002227&mtn=36%5E%7C%5E5%EC%9B%94+%EC%B6%94%EC%B2%9C+%EB%A9%94%EB%89%B4%5E%7C%5En">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/best2.PNG" alt="" style="width: 280px;"><br><br>
+                                        <h6>부부가 함께 하기 좋은 밀키트 SET(하우스비프스테이크 + 감바스 + 토마토 파스타)</h6>
+                                    </a>
+                                    <h6>39,700원</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="service-item rounded pt-3">
+                                <div class="p-4 text-center">
+                                    <a href = "https://www.mychef.kr/goods/goods_view.php?goodsNo=1000002228&mtn=36%5E%7C%5E5%EC%9B%94+%EC%B6%94%EC%B2%9C+%EB%A9%94%EB%89%B4%5E%7C%5En">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/best3.PNG" alt="" style="width: 280px;"><br><br>
+                                        <h6>아이와 함께 하기 좋은 밀키트 SET(DIY 피자만들기 + 펜네 베이컨 크림 + 달콤 치즈 떡볶이)</h6>
+                                    </a>
+                                    <h6>31,700원</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="service-item rounded pt-3">
+                                <div class="p-4 text-center">
+                                    <a href = "https://www.mychef.kr/goods/goods_view.php?goodsNo=1000000559&mtn=36%5E%7C%5E5%EC%9B%94+%EC%B6%94%EC%B2%9C+%EB%A9%94%EB%89%B4%5E%7C%5En">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/best4.PNG" alt="" style="width: 280px;"><br><br>
+                                        <h6>밀푀유나베(2인)</h6>
+                                    </a>
+                                    <h6>16,900원</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Popular Menu</h5>
+                    <h1 class="mb-5">인기 있는 제품</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Korean food</small>
+                                    <h6 class="mt-n1 mb-0">한식</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Chinese food</small>
+                                    <h6 class="mt-n1 mb-0">중식</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Western food</small>
+                                    <h6 class="mt-n1 mb-0">양식</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/korean1.PNG" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>안동식 순살 찜닭(2인)</span>
+                                                <span class="text-primary">마이셰프</span>
+                                            </h5>
+                                            <small class="fst-italic">자극적이지 않아 남녀노소 모두가 좋아하는 단짠의 맛!</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/korean2.PNG" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>궁중 소고기 버섯잡채(2인)</span>
+                                                <span class="text-primary">마이셰프</span>
+                                            </h5>
+                                            <small class="fst-italic">특별한 날 함께 하면 좋은 대표 한식메뉴</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/korean3.PNG" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>실속 부대찌개(2인)</span>
+                                                <span class="text-primary">마이셰프</span>
+                                            </h5>
+                                            <small class="fst-italic">엄선된 햄을 듬뿍 담은 실속 부대찌개</small>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/chiense1.PNG" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>짜장면(2인분)</span>
+                                                <span class="text-primary">이연복의 목란</span>
+                                            </h5>
+                                            <small class="fst-italic">정석 그대로 뽑은 면, 각종 재료를 큼지막하게 썰어 넉넉하게 담은 짜장 소스가 함께 담겨져 있어요.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/chiense2.PNG" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>짬봉(2인분)</span>
+                                                <span class="text-primary">이연복의 목란</span>
+                                            </h5>
+                                            <small class="fst-italic">중화면을 넉넉하게 담고, 매콤한 국물에는 사골 육수와 불맛을 더하였고, 해산물과 야채 등 건더기가 실해 집에서 한 끼를 해결하기에 좋아요.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/chiense3.PNG" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>베이징풍 찹쌀탕수육</span>
+                                                <span class="text-primary">모노키친</span>
+                                            </h5>
+                                            <small class="fst-italic">국산 돼지고기 등심에 타피오카 가루를 입혀 만들었어요. 별도 재료를 추가하지 않아도 푸짐하게 드실 수 있어요.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/western1.PNG" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>레드와인스테이크(2인)</span>
+                                                <span class="text-primary">마이셰프</span>
+                                            </h5>
+                                            <small class="fst-italic">소의 특별한 부위, 부챗살의 풍미와 깊은 레드와인 소스가 입안 가득 퍼지는 레드와인 스테이크입니다.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/western2.PNG" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>감바스알아히요(2인)</span>
+                                                <span class="text-primary">마이셰프</span>
+                                            </h5>
+                                            <small class="fst-italic">스페인 새우요리의 진수! 까수엘라 감바스 알아히요입니다.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/western3.PNG" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>원팬 소고기 화이트 파스타(2인)</span>
+                                                <span class="text-primary">마이셰프</span>
+                                            </h5>
+                                            <small class="fst-italic">원팬으로 완성하는 간편한 소고기 화이트 파스타</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Rank</h5>
+                    <h1 class="mb-5">인기업체</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4 harim">
+                                <img class="img-fluid" src="img/harim2.PNG" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/Nongshim2.PNG" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/paldo2.PNG" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/YeonbokLee2.PNG" alt=""  >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">sound</h5>
+                    <h1 class="mb-5">고객의 소리</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>제품 구매를 하면서 다른 사람들이 어떻게 요리를 했는지 알 수 있어서 좋아요.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="/img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h6 class="mb-1">맑은물</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>불편한 점을 말하면 바로바로 해결해줘서 좋아요</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="/img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h6 class="mb-1">맑은공기</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>원하는 물건이 다있어서 좋아요</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="/img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h6 class="mb-1">맑은강</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>처음 이용해본 사이트인데 좋은거 같습니다.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="/img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h6 class="mb-1">맑은집</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->     
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">등록 회사</h4>
+                        <p>마이셰프</p>
+                        <p>이연복의 목란</p>
+                        <p>팔도</p>
+                        <p>농심</p>
+                        <p>하림</p>
+                        <!-- <a class="btn btn-link" href="">이연복의 목란</a>
+                        <a class="btn btn-link" href="">팔도</a>
+                        <a class="btn btn-link" href="">농심</a>
+                        <a class="btn btn-link" href="">하림</a> -->
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">위치</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>서울특별시 노원구 공릉 1동</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>010-5720-3562</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>saunghunlee@naver.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">오픈 시간</h4>
+                        <h5 class="text-light fw-normal">월요일~금요일</h5>
+                        <p>08AM - 10PM</p>
+                        <h5 class="text-light fw-normal">
+                            토요일~일요일</h5>
+                        <p>09AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">회사</h4>
+                        <p>
+                            법인명 (상호) : 주식회사 올키트
+                        </p>
+                        <p>
+                            사업자등록번호 : 123-45-67890
+                        </p>
+                        <p>
+                            개인정보보호책임자(부대표) : 최진욱
+                        </p>
+                        <p>
+                            대표 : 이상훈
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

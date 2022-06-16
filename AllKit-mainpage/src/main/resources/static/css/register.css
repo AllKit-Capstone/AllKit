@@ -1,0 +1,39 @@
+.container2
+{
+    
+    width: 900px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 100px;
+
+}
+h2{
+    color:blue;
+}
+
+.star{
+    color:red;
+}
+
+label{
+    font-weight: bolder;
+}
+
+.btn{
+    background-color: black;
+    color:white
+}
+
+.btn2{
+    background-color: grey;
+    color:white;
+    border:rgba(121,100,76,0.6);
+    border: 1px solid lightgray;
+}
+
+.myhr{
+    border: none;
+    height: 15px;
+    color:red;
+}
